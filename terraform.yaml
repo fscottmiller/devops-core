@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: terraform
-        image: terraform:latest
+        image: terraform
