@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: terraform
-        image: hasicorp/terraform:0.12.3
+        image: hashicorp/terraform:0.12.3
