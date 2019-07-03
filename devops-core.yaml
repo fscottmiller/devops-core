@@ -2,21 +2,21 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: jenkins-deployment
-  spec:
-    replicas: 1
-    selector:       # what is this?
-      matchLabels:    # and this?
-        app: jenkins
-    template:
-        metadata:
-          labels:
-            app: jenkins
-        spec: 
-          containers:
-          - name: jenkins
-            image: jenkins:2.60.3
-            ports:
-            - containerPort: 8080
+spec:
+  replicas: 1
+  selector:       # what is this?
+    matchLabels:    # and this?
+      app: jenkins
+  template:
+      metadata:
+        labels:
+          app: jenkins
+      spec: 
+        containers:
+        - name: jenkins
+          image: jenkins:2.60.3
+          ports:
+          - containerPort: 8080
 ---
 apiVersion: v1
   kind: Service
